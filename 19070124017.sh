@@ -3,8 +3,9 @@ read fn
 touch $fn
 echo "$fn is created"
 echo "Enter contents of $fn and press ctrl + d to save"
-cat $fn
+cat > $fn
 echo - e "\n File contents are: "
+cat $fn
 
 echo "File in Uppercase"
 cat $fn | tr 'a-z' 'A-Z' < $fn
