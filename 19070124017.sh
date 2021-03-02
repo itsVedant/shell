@@ -4,9 +4,12 @@ touch $fn
 echo "$fn is created"
 echo "Enter contents of $fn and press ctrl + d to save"
 cat > $fn
+
+echo -en '\n' 
 echo - e "\n File contents are: "
 cat $fn
 
+echo -en '\n' 
 echo "File in Uppercase"
 cat $fn | tr 'a-z' 'A-Z' < $fn
 
